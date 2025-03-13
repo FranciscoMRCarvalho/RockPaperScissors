@@ -1,0 +1,19 @@
+body {
+    margin: 0 5%;
+}
+
+.title {
+    color: green;
+    text-align: center;
+}
+
+.title:hover {
+    color: aqua;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.score:hover {
+    background-color: gray;
+    color: white;
+}

@@ -17,11 +17,11 @@ function getHumanChoice() {
 function PlayRound(HumanChoice, ComputerChoice) {
     switch (HumanChoice) {
         case 0:
-            if (ComputerChoice = 1){
+            if (ComputerChoice == 1) {
                 alert("Computer Wins");
                 ComputeScore = ComputeScore + 1;
                 break;
-            } else if (ComputerChoice = HumanChoice) {
+            } else if (ComputerChoice == HumanChoice) {
                 alert("Tie");
                 break
             } else {
@@ -29,34 +29,34 @@ function PlayRound(HumanChoice, ComputerChoice) {
                 HumanScore = HumanScore + 1;
                 break;
             }
-            case 1:
-                if (ComputerChoice = 2){
-                    alert("Computer Wins");
-                    ComputeScore = ComputeScore + 1;
-                    break;
-                } else if (ComputerChoice = HumanChoice) {
-                    alert("Tie");
-                    break
-                } else {
-                    alert("Player Wins");
-                    HumanScore = HumanScore + 1;
-                    break;
-                }
-            case 2:
-                if (ComputerChoice = 0){
-                    alert("Computer Wins");
-                    ComputeScore = ComputeScore + 1;
-                    break;
-                } else if (ComputerChoice = HumanChoice) {
-                    alert("Tie");
-                    break
-                } else {
-                    alert("Player Wins");
-                    HumanScore = HumanScore + 1;
-                    break;
-                }
-            default:
-                alert("Only available throw 0 to 2");
+        case 1:
+            if (ComputerChoice == 2) {
+                alert("Computer Wins");
+                ComputeScore = ComputeScore + 1;
+                break;
+            } else if (ComputerChoice == HumanChoice) {
+                alert("Tie");
+                break
+            } else {
+                alert("Player Wins");
+                HumanScore = HumanScore + 1;
+                break;
+            }
+        case 2:
+            if (ComputerChoice == 0) {
+                alert("Computer Wins");
+                ComputeScore = ComputeScore + 1;
+                break;
+            } else if (ComputerChoice == HumanChoice) {
+                alert("Tie");
+                break
+            } else {
+                alert("Player Wins");
+                HumanScore = HumanScore + 1;
+                break;
+            }
+        default:
+            alert("Only available throw 0 to 2");
     }
     document.getElementById("ScoreText").textContent = "Score: Player: " + HumanScore + " / Computer: " + ComputeScore
 }
@@ -64,7 +64,7 @@ function PlayRound(HumanChoice, ComputerChoice) {
 function StartGame() {
     let humanSelection = getHumanChoice();
     let computeSelection = getComputerChoice();
-    PlayRound(humanSelection , computeSelection);
+    PlayRound(humanSelection, computeSelection);
 }
 
 
